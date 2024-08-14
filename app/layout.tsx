@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { rubik } from "./ui/font";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +14,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${rubik.className}`}>
+        <div className="flex">
+          <div>
+            <header>
+              <h1 className="font-bold">Hello.</h1>
+              <h2 className="font-bold">My name is Hongsreng Pheng.</h2>
+            </header>
+            <main>
+              <div>
+                <p>
+                  I am a software developer currently based in Cambodia. You can
+                  follow me on&nbsp;
+                  <a href="https://www.linkedin.com/in/hongsreng-pheng-94b602277">
+                    LinkedIn
+                  </a>
+                </p>
+                <p>
+                  As a tech enthusiast, I am passionate with learning new tech
+                  and trying different ways to build software product. I enjoy
+                  competitive programming outside of Software Development work.
+                  My result for Cambodia <a href="https://vuejs.org">CS CUP</a>{" "}
+                  competition was top 4.
+                </p>
+                <p>
+                  Outside of programming, I enjoy video games, karaoke, ice
+                  cream, playing music, reading book and sleep.
+                </p>
+              </div>
+            </main>
+          </div>
+          <div className="m-10 grow border-2 rounded-xl p-5 ring-2 ring-slate-100">
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
