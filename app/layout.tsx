@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { rubik } from "./ui/font";
+import { rubik } from "./lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,10 +32,11 @@ export default function RootLayout({
                 </p>
                 <p>
                   As a tech enthusiast, I am passionate with learning new tech
-                  and trying different ways to build software product. I enjoy
-                  competitive programming outside of Software Development work.
-                  My result for Cambodia <a href="https://vuejs.org">CS CUP</a>{" "}
-                  competition was top 4.
+                  and trying different ways to build software product. Outside
+                  of Software Development Work, I also enjoy competitive
+                  programming. My result for Cambodia&nbsp;
+                  <a href="https://vuejs.org">CS CUP</a>&nbsp; competition was
+                  top 4.
                 </p>
                 <p>
                   Outside of programming, I enjoy video games, karaoke, ice

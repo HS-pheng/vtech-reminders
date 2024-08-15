@@ -4,12 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Rubik";
   padding: 3vw 4vw 3vw 4vw;
@@ -24,7 +18,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin: 1em 0 1em 0;
+  margin: 0.5em 0 0.5em 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0.5em 0 0.5em 0;
 }
 
 main p {
