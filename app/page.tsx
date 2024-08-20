@@ -45,11 +45,17 @@ export default function Home() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json",
       },
       body: JSON.stringify({ todo }),
-    }).then(() => {
-      loadTodos();
-      handleEnterAdd();
+    }).then(async (res) => {
+      if (!res.ok) {
+        const jsonRes = (await res.json()) as { message: string };
+        notify(jsonRes.message);
+      } else {
+        loadTodos();
+        handleEnterAdd();
+      }
     });
   };
 
