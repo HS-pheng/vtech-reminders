@@ -52,10 +52,9 @@ export default function Home() {
       if (!res.ok) {
         const jsonRes = (await res.json()) as { message: string };
         notify(jsonRes.message);
-      } else {
-        loadTodos();
-        handleEnterAdd();
       }
+      loadTodos();
+      handleEnterAdd();
     });
   };
 
@@ -77,6 +76,7 @@ export default function Home() {
         const jsonRes = (await res.json()) as { message: string };
         notify(jsonRes.message);
         setEditable(true);
+        setLoading(false);
       } else {
         loadTodos();
         setEditable(false);
