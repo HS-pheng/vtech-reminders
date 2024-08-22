@@ -34,8 +34,10 @@ export default function RootLayout({
                   and trying different ways to build software product. Outside
                   of Software Development Work, I also enjoy competitive
                   programming. My result for Cambodia&nbsp;
-                  <a href="https://vuejs.org">CS CUP</a>&nbsp; competition was
-                  top 4.
+                  <a href="https://sites.google.com/paragoniu.edu.kh/cscup/previous-years/cambodia-cs-cup-2022?authuser=0">
+                    CS CUP
+                  </a>
+                  &nbsp; competition was top 4.
                 </p>
                 <p>
                   Outside of programming, I enjoy video games, karaoke, ice
